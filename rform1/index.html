@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Registration - KICC</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Registration Form</h2>
+                    <form action="http://localhost:8080/api/members"  id="form" method="POST">
+
+                        <div class="input-group">
+                            <label class="label">Branch</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select id="branch_select" name="branchId">
+                                    <!-- <option disabled="disabled" selected="selected">Choose branch</option> -->
+                                    
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">title</label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select id="title_select" name="title">
+                                            <option disabled="disabled" selected="selected">Choose title</option>
+                                            <option value="Mr" >Mr</option>
+                                            <option value="Mrs" >Mrs</option>
+                                            <option value="Miss" >Miss</option>
+                                            <option value="Pastor" >Pastor</option>
+                                            <option value="Deacon" >Deacon</option>
+                                            <option value="Deaconess" >Deaconess</option>
+                                            <option value="Doctor" >Doctor</option>
+                                            
+                                            
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">first name</label>
+                                    <input class="input--style-4" type="text" name="fname">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">middle name</label>
+                                    <input class="input--style-4" type="text" name="mname">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">last name</label>
+                                    <input class="input--style-4" type="text" name="lname">
+                                </div>
+                            </div>
+                        </div>
+                 
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Birthday (DD/MM)</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input value="male" type="radio" checked="checked" name="sex">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input value="female" type="radio" name="sex">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Home Address</label>
+                                    <input class="input--style-4" type="text" name="street">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">City/Locality</label>
+                                    <input class="input--style-4" type="text" name="city">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">State</label>
+                                    <input class="input--style-4" type="text" name="state">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Country</label>
+                                    <input class="input--style-4" type="text" name="country">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Phone Number</label>
+                                    <input class="input--style-4" type="text" name="phone1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Occupation</label>
+                                    <input class="input--style-4" type="text" name="occupation">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Employer</label>
+                                    <input class="input--style-4" type="text" name="employer">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Marital Status</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Single
+                                            <input value="single" type="radio" checked="checked" name="marital_status">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Married
+                                            <input value="married" type="radio" name="marital_status">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="anniversary_div" class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Anniversary (DD/MM)</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="m_anniversary">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Do you have a giving number?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Yes
+                                            <input value="yes" type="radio"  name="gno">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">No
+                                            <input checked="checked" value="no" type="radio" name="gno">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="givno" class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter your Giving Number</label>
+                                    <input class="input--style-4" type="text" name="givingNo">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Have you been baptized?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Yes
+                                            <input checked="checked" value="1" type="radio"  name="baptized">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">No
+                                            <input  value="0" type="radio" name="baptized">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="bptd" class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Would you like to be baptized?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Yes
+                                            <input value="yes" type="radio" checked="checked" name="bptch">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">No
+                                            <input value="no" type="radio" name="bptch">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+       
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Are you a steward in church?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Yes
+                                            <input value="yes" type="radio"  name="stw">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">No
+                                            <input value="no" type="radio" name="stw">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="lst" class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Would you like to be a steward?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Yes
+                                            <input value="yes" type="radio"  name="stew">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">No
+                                            <input value="no" type="radio" name="stew">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                 
+
+                        <div id="dpt" class="input-group">
+                            <label class="label">Department</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select id="dept" name="department">
+                                    <option disabled="disabled" selected="selected">Choose department</option>
+                                    
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+    
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/serve.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

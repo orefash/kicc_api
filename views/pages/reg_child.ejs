@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Registration - KICC</title>
+
+    <%- include('../partials/head')-%>
+
+</head>
+
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+
+                    <%- include('../partials/main_logo')-%>
+                    
+                    <form action="http://localhost:8080/api/members/mreln"  id="sform" method="POST">
+                        <input name="mid" id="mid" type="hidden" value="<%= member.id %>" >
+                        <input name="reln" id="reln" type="hidden" value="2" >
+                        
+                        
+                        <%- include('../partials/base_form')-%>
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Home Address</label>
+                                    <input class="input--style-4" type="text" name="street" value="<%= member.street %>">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">City/Locality</label>
+                                    <input class="input--style-4" type="text" name="city" value="<%= member.city %>">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">State</label>
+                                    <input value="<%= member.state %>" class="input--style-4" type="text" name="state">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Country</label>
+                                    <input value="<%= member.country %>" class="input--style-4" type="text" name="country">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Phone Number</label>
+                                    <input class="input--style-4" type="text" name="phone1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <%- include('../partials/opt_form')-%>
+
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <%- include('../partials/foot')-%>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

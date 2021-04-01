@@ -1,0 +1,148 @@
+<div class="row row-space">
+    <div class="col-2">
+        <div class="input-group">
+            <label class="label">Occupation</label>
+            <input class="input--style-4" type="text" name="occupation">
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="input-group">
+            <label class="label">Employer</label>
+            <input class="input--style-4" type="text" name="employer">
+        </div>
+    </div>
+</div>
+
+<div class="row row-space">
+    <div class="col-2">
+        <div class="input-group">
+            <label class="label">Marital Status</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45">Single
+                    <input value="single" type="radio" checked="checked" name="marital_status">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Married
+                    <input value="married" type="radio" name="marital_status">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="anniversary_div" class="col-2">
+        <div class="input-group">
+            <label class="label">Anniversary (DD/MM)</label>
+            <div class="input-group-icon">
+                <input class="input--style-4 js-datepicker" type="text" name="m_anniversary">
+                <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row row-space">
+    <div class="col-2">
+        <div class="input-group">
+            <label class="label">Do you have a giving number?</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45">Yes
+                    <input value="yes" type="radio"  name="gno">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">No
+                    <input checked="checked" value="no" type="radio" name="gno">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="givno" class="col-2">
+        <div class="input-group">
+            <label class="label">Enter your Giving Number</label>
+            <input class="input--style-4" type="text" name="givingNo">
+        </div>
+    </div>
+</div>
+
+
+<div class="row row-space">
+    <div class="col-2">
+        <div class="input-group">
+            <label class="label">Have you been baptized?</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45">Yes
+                    <input checked="checked" value="1" type="radio"  name="baptized">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">No
+                    <input  value="0" type="radio" name="baptized">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="bptd" class="col-2">
+        <div class="input-group">
+            <label class="label">Would you like to be baptized?</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45">Yes
+                    <input value="yes" type="radio" checked="checked" name="bptch">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">No
+                    <input value="no" type="radio" name="bptch">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row row-space">
+    <div class="col-2">
+        <div class="input-group">
+            <label class="label">Are you a steward in church?</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45">Yes
+                    <input value="yes" type="radio"  name="stw">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">No
+                    <input value="no" type="radio" name="stw">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="lst" class="col-2">
+        <div class="input-group">
+            <label class="label">Would you like to be a steward?</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45">Yes
+                    <input value="yes" type="radio"  name="stew">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">No
+                    <input value="no" type="radio" name="stew">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="dpt" class="input-group">
+    <label class="label">Department</label>
+    <div class="rs-select2 js-select-simple select--no-search">
+        <select id="dept" name="department">
+            <option disabled="disabled" selected="selected">Choose department</option>
+            
+        </select>
+        <div class="select-dropdown"></div>
+    </div>
+</div>
